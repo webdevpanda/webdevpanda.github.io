@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script>
+        const projectName = 'survey-form';
+        </script>
+        <link rel="shortcut icon" href="https://i.ibb.co/sCPkMZn/1592205325965.png" type="image/x-icon">
+        <title>Survey form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">
+                WebDevPanda Survey Form
+            </h1>
+            <p id="description">
+                Thank you 😊 for taking the time to complete this survey form.
+            </p>
+        </header>
+        <form action="" id="survey-form" method="POST">
+            <div class="form-input">
+                <label for="name" id="name-label" >Name</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="Your Name" required="">
+            </div>
+            <div class="form-input">
+                <label for="email" id="email-label">Email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Your Email" required="">
+            </div>            
+            <div class="form-input">
+                <label for="number" id="number-label">Age <span class="age-desc">Must above 13 Years</span></label>
+                <br>
+                <input type="number" name="age" id="number" min="13" max="99" placeholder="Your Age">
+            </div>        
+            <div class="form-input">
+                <p>Your Profession</p>
+                <select name="" id="dropdown">
+                    <option value="not-selected" selected="" disabled="">Your Profession</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="full-time-learner">Full Time Learner</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>        
+            <div class="form-input">
+                <p>Will you recommend WebDevPanda to others?</p>
+                <label for="definitely">
+                <input type="radio" checked="" name="recommend-to-others" id="definitely" value="definitely"> Definitely 😀
+                </label>
+                <br>
+                <label for="maybe">
+                <input type="radio" name="recommend-to-others" id="maybe" value="Maybe"> Maybe 🤔
+                </label>
+                <br>
+                <label for="not-sure">
+                <input type="radio" name="recommend-to-others" id="not-sure" value="Not Sure"> Not Sure 😢
+                </label>
+            </div>
+            <div class="form-input" id="checkbox">
+                <p>Which type of content do you want to be posted on our Instagram page?(Check all that apply.)</p>
+                <label>
+                    <input type="checkbox" name="content-prefer" value="html-course"> HTML Course
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="content-prefer" value="css-course">
+                    CSS Course
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="content-prefer" value="html-tips">
+                    HTML Tips
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="content-prefer" value="css-tips">
+                    CSS Tips
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="content-prefer" value="general-info">
+                    General Information about Web & Technologies
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="content-prefer" value="code-snippet">
+                    Code Snippets
+                </label>
+            </div>     
+            <div class="form-input">
+                <p>
+                    Any comments or suggestions?
+                </p>
+                <textarea name="comment-and-suggestions" cols="30" rows="10" placeholder="Your comments and suggestions on our content"></textarea>
+            </div>
+            <div class="form-input">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+        <div class="footer" id="footer">
+            This webpage is made by <a href="http://www.instagram.com/the_klbmbmht" target="_blank" rel="noopener noreferrer">Aditya Kumar.</a>
+        </div>
+    </body>
+</html>

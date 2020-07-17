@@ -8,6 +8,8 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header {
     width: 100%;

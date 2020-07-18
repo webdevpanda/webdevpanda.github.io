@@ -1,0 +1,22 @@
+* {
+    font-family:hack, monospace;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+a {
+    text-decoration:none;
+    padding: 5px;
+    background-color: aqua;
+    transition: 0.2s;
+}
+a:hover {
+    color: black;
+    background-color: cornflowerblue;
+    padding: 7px;
+    transform: scale(1.001);
+}
+
+Okay its done for now ! byee
